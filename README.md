@@ -26,7 +26,7 @@ Microservice that handles reminders and notifications for a to-do list applicati
 The microservice uses the Molecular framework. It uses REST API for communication pipes. The microservice is responsible for creating, fetching, and deleting reminders. It also handles sending notifications to the user when a reminder is due. The microservice uses MongoDB to store reminders. It periodically checks for due reminders, and when a reminder is due, it sends a notification to the user within one hour (can be changed based on preference) of it being due (right now as a console log). A third-party service can easily be added to send reminders via email or SMS. I've added comments where preferences can be changed.
 
 ### UML Diagram
-![Notification Microservice UML Diagram](UMLDiagram.png)
+![Notification Microservice UML Diagram](UML-Diagram.png)
 
 ### Communication Contract
 - To create a reminder, send a POST request to http://localhost:3000/api/reminders with the reminder details (title, dueDate, dueTime) in the request body as JSON.
